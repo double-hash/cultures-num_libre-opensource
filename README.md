@@ -10,7 +10,7 @@ Site à propos des logiciels Libres et Open-source dans le cadre d'une présenta
 https://desktop.github.com/
 
 ### 2 - Cloner le repository sur votre ordinateur
-Cela permet de récupérer le projet sur votre ordinateur
+Cela permet de cloner le répertoire distant du projet sur votre ordinateur, où vous pourrez le modifier, puis éventuellement pousser vos modifications sur le répertoire distant.
 
 ### 3 - Commandes git
 Commande à effectuer dans le répertoire de votre projet.
