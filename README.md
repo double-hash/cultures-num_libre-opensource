@@ -19,6 +19,8 @@ Commande à effectuer dans le répertoire de votre projet.
 
 - 'git pull' -> permet de récupérer la dernière version du projet (à faire avant de pousser des modifications sur le projet distant)
 
-- 'git commit -m "Votre message (ex: Modification du Header)"'
+- 'git commit -m "Votre message (ex: Modification du Header)"' -> enregistre vos modifications avec un message spécifique
 
 - 'git push' -> permet de "pousser" vos modifications (commits) sur le répertoire distant.
+
+- 'git checkout' -> permet de voir l'état de votre répertoire local par rapport au répertoire distant
