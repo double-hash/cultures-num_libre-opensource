@@ -68,6 +68,11 @@ a:active {
   margin:10px;
 }
 
+.nav__item--active > a{
+  font-weight: bold;
+  /* border-bottom: 1px solid red; */
+}
+
 .nav--sub {
   /* display:none; */
 }
