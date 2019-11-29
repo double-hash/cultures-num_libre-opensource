@@ -20,8 +20,14 @@ Commande à effectuer dans le répertoire de votre projet.
 - 'git pull' 
 -> permet de récupérer la dernière version du projet (à faire avant de pousser des modifications sur le projet distant)
 
+- 'git add nomdufichier' 
+-> permet d'ajouter un fichier modifié à un commit pour la modification du projet
+
+- 'git add .'
+-> permet d'ajouter tous les fichiers modifiés du répertoire à un commit.
+
 - 'git commit -m "Votre message (ex: Modification du Header)"' 
--> enregistre vos modifications avec un message spécifique
+-> enregistre vos modifications avec un message spécifique.
 
 - 'git push' 
 -> permet de "pousser" vos modifications (commits) sur le répertoire distant.
