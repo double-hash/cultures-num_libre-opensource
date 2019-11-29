@@ -4,6 +4,11 @@ body {
   font-size:16px;
   font-family: 'Helvetica', 'Arial', sans-serif;
   line-height: 1.5;
+  color : #3A3A3A;
+}
+
+strong {
+  font-weight: bold;
 }
 
 .hidden {
@@ -49,7 +54,10 @@ a:active {
 
 /* MAIN */
 .main {
+  position: relative;
   display:flex;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 
@@ -90,8 +98,8 @@ a:active {
 .main__content {
   width: 50%;
   padding: 20px;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  /* border-left: 1px solid black;
+  border-right: 1px solid black; */
 }
 .content__title {
   text-align: center;
@@ -100,8 +108,10 @@ a:active {
 .main__content ul, 
 .main__content ol {
   box-sizing: border-box;
-  padding-left: 20px;
-  background:#eeeeee;
+  padding: 5px 10px 5px 20px;
+  background: #fffac2;
+  color: black;
+  margin-bottom:5px;
 }
 
 .main__content ol {
@@ -113,4 +123,80 @@ a:active {
 
 /*STYLES DE L'ARTICLE*/
 
-/* CONTENU GENERAL */
+/* Images */
+
+.open-image,
+.open-image:hover {
+  color: red;
+}
+
+.open-image img {
+  display:none;
+  position: absolute;
+  right: 0;
+  width: calc(100% - 320px - 50%);
+  max-height: 400px;
+  object-fit: contain;
+  object-position: right;
+  margin-top: -1em;
+}
+
+.open-image-active {
+  text-decoration: underline;
+  border-bottom: 1px solid red;
+}
+
+
+.open-image-active img {
+  display:block;
+}
+
+.open-image-active img:hover {
+  max-height: 100%;
+  z-index: 10;
+  width: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) { 
+  .nav {
+    width: 0px;
+    overflow: hidden;
+  }
+  .main__content {
+    width: 100vw;
+    overflow: hidden;
+    border: 0px;
+    padding: 10px;
+  }
+  h1 {
+    margin: 15px auto;
+    font-size: 1.5em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  .open-image {
+    position:relative;
+  }
+  .open-image img {
+    width:100%;
+    left: 0;
+    min-width:150px;
+    bottom: 100%;
+  }
+}
+
+
+@media (min-width: 769px) { 
+  .open-image:hover {
+    border-bottom: 1px solid red;
+  }
+  .open-image:hover img {
+    display:block;
+  }
+}
+
