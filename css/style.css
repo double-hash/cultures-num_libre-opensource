@@ -42,6 +42,10 @@ li:last-child {
   margin-bottom: 15px;
 }
 
+.list--alt {
+  background: none;
+}
+
 a:link,
 a:visited,
 a:hover,
@@ -152,7 +156,7 @@ a:active {
 }
 
 .open-image-active img:hover {
-  max-height: 100%;
+  max-height: 100vh;
   z-index: 10;
   width: auto;
 }
