@@ -51,7 +51,8 @@ a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-  color:black;
+  border-bottom: 1px solid blue;
+  color:blue;
 }
 
 /* HEADER */
@@ -78,6 +79,14 @@ a:active {
 .nav__item {
   display:block;
   margin:10px;
+}
+
+.nav a:link,
+.nav a:visited,
+.nav a:hover,
+.nav a:active {
+  color:black;
+  border-bottom: none;
 }
 
 .nav__item--active > a{
